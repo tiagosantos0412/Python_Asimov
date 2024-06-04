@@ -20,8 +20,10 @@ while tentativas <= 3:
     if chute == numero:
         print(f'Parabéns você acertou!\nEu estava pensando no número {numero}...')
         break  # Sai do loop se acertar
-    else:
-        print('Você errou!')
+    elif chute > numero:
+        print('Você errou! Chute muito alto')
+    elif chute < numero:
+        print('Você errou! Chute muito baixo')
     tentativas += 1
 
 if chute != numero:
